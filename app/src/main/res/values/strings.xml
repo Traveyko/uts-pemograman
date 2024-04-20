@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">data penduduk</string>
+    <string name="data_penduduk">DATA PENDUDUK</string>
+    <string name="masukan_nama_lengkap">Masukan Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="nik">NIK</string>
+    <string name="gender">Gender</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="ttl">TTL</string>
+    <string name="alamat">Alamat</string>
+    <string name="phone_number">phone number</string>
+    <string name="submit">SUBMIT</string>
+</resources>
