@@ -8,34 +8,31 @@ import android.widget.TextView;
 import java.util.Objects;
 
 public class HasilActivity extends AppCompatActivity {
-TextView txt1, txt2, txt3, txt4, txt5, txt6, txt7;
+TextView nama, email, gender1, gender2, date, adrs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil);
 
-        txt1 = findViewById(R.id.namawarga);
-        txt2 = findViewById(R.id.emailwarga);
-        txt3 = findViewById(R.id.NIKwarga);
-        txt4 = findViewById(R.id.jenisklmn);
-        txt5 = findViewById(R.id.TTLwarga);
-        txt6 = findViewById(R.id.alamatwarga);
-        txt7 = findViewById(R.id.nomerwarga);
+        nama = findViewById(R.id.txt_nama);
+        email = findViewById(R.id.txt_email);
+        gender1 = findViewById(R.id.gender1);
+        gender2 = findViewById(R.id.gender2);
+        date = findViewById(R.id.txt_bd);
+        adrs = findViewById(R.id.txt_adrs);
 
-        String nama = Objects.requireNonNull(getIntent().getExtras()).getString("nama");
-        String email = getIntent().getExtras().getString("email");
-        String NIK = getIntent().getExtras().getString("NIK");
-        String gender = getIntent().getExtras().getString("gender");
-        String TTL = getIntent().getExtras().getString("TTL");
-        String alamat = getIntent().getExtras().getString("alamat");
-        String phone = getIntent().getExtras().getString("phone");
+        String get_nama = Objects.requireNonNull(getIntent().getExtras()).getString("nama");
+        String get_email = getIntent().getExtras().getString("email");
+        String get_gender1 = getIntent().getExtras().getString("jeniskelamin");
+        String get_gender2 = getIntent().getExtras().getString("jeniskelamin");
+        String get_date = getIntent().getExtras().getString("date");
+        String get_adrs = getIntent().getExtras().getString("alamat");
 
-        txt1.setText("Nama\n"+nama);
-        txt2.setText("email\n"+email);
-        txt3.setText("NIK\n"+NIK);
-        txt4.setText("gender\n"+gender);
-        txt5.setText("TTL\n"+TTL);
-        txt6.setText("alamat\n"+alamat);
-        txt7.setText("phone\n"+phone);
+        nama.setText("Name : "+get_nama);
+        email.setText("Email : "+get_email);
+        gender1.setText("Gender : "+get_gender1);
+        gender2.setText("Gender : "+get_gender2);
+        date.setText("Date : "+get_date);
+        adrs.setText("Address : "+get_adrs);
     }
 }

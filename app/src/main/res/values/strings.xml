@@ -1,14 +1,15 @@
 <resources>
-    <string name="app_name">data penduduk</string>
-    <string name="data_penduduk">DATA PENDUDUK</string>
-    <string name="masukan_nama_lengkap">Masukan Nama Lengkap</string>
+    <string name="app_name">data diri</string>
+    <string name="member">MEMBER CRYPTO</string>
+    <string name="Name">Name</string>
     <string name="email">Email</string>
-    <string name="nik">NIK</string>
     <string name="gender">Gender</string>
-    <string name="laki_laki">Laki-laki</string>
-    <string name="perempuan">Perempuan</string>
-    <string name="ttl">TTL</string>
-    <string name="alamat">Alamat</string>
-    <string name="phone_number">phone number</string>
+    <string name="Female">Female</string>
+    <string name="Male">Male</string>
+    <string name="BD">Bitrh Date</string>
+    <string name="address">Address</string>
     <string name="submit">SUBMIT</string>
+    <string name="colourtext">#F652A0</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
 </resources>

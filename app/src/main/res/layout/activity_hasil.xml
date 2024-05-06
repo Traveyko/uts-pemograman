@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,55 +9,70 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:padding="15dp"
-        android:text="@string/data_penduduk"
-        android:textSize="40sp"
         android:gravity="center"
-        android:textColor="@android:color/holo_red_dark"
-        android:textStyle="bold"/>
+        android:padding="15dp"
+        android:text="@string/member"
+        android:textColor="#4C5270"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
 
     <TextView
-        android:id="@+id/namawarga"
+        android:id="@+id/txt_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"/>
+        android:layout_below="@+id/app"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/text"/>
 
     <TextView
-        android:id="@+id/emailwarga"
+        android:id="@+id/txt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"/>
+        android:layout_below="@+id/txt_nama"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/text"/>
 
     <TextView
-        android:id="@+id/NIKwarga"
+        android:id="@+id/gender1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"/>
-    <TextView
-        android:id="@+id/jenisklmn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"/>
-    <TextView
-        android:id="@+id/TTLwarga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"/>
-    <TextView
-        android:id="@+id/alamatwarga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"/>
-    <TextView
-        android:id="@+id/nomerwarga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"/>
+        android:layout_below="@+id/txt_email"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/text"/>
 
+    <TextView
+        android:id="@+id/gender2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_email"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/text"/>
 
+    <TextView
+        android:id="@+id/txt_bd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender1"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/text"/>
 
+    <TextView
+        android:id="@+id/txt_adrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_bd"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/text"/>
 
-</LinearLayout>
+</RelativeLayout>
